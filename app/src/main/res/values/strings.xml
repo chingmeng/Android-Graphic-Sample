@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="app_name">imageView</string>
+
+    <string-array name="Navigation">
+        <item name="navi1">ScaleType</item>
+        <item name="navi2">Large image</item>
+        <item name="navi3">Draw Text</item>
+        <item name="navi4">Drawable</item>
+        <item name="navi5">Custom Drawable</item>
+        <item name="navi6">Crop Image</item>
+        <item name="navi7">Sketch</item>
+        <item name="navi8">Canvas Drawing</item>
+        <item name="navi9">Canvas Rotate Animation</item>
+        <item name="navi10">Canvas Rotate Scaling Animation</item>
+        <item name="navi11">Canvas Shader</item>
+        <item name="navi12">Canvas Shader Scaling Animation</item>
+        <item name="navi13">Drawable to Bitmap</item>
+        <item name="navi14">Load Image</item>
+        <item name="navi14">Combine Image</item>
+
+    </string-array>
+
+
+</resources>

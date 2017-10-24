@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.meng.imageview.activity_sketch">
+
+    <com.meng.imageview.CanvasView
+        android:id="@+id/signature_canvas"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        />
+
+    <ImageView
+        android:id="@+id/save_view"
+        android:layout_below="@id/signature_canvas"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+
+    <ImageView
+        android:id="@+id/save_view2"
+        android:layout_below="@id/signature_canvas"
+        android:layout_toRightOf="@id/save_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="right"
+        />
+
+    <ImageView
+        android:id="@+id/mergedimage"
+        android:layout_below="@id/save_view"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:layout_gravity="center_vertical" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="clearCanvas"
+        android:text="Clear Canvas"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:onClick="copyCanvas"
+        android:layout_alignParentLeft="true"
+        android:text="Copy Bitmap"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:onClick="copyCanvas2"
+        android:layout_alignParentRight="true"
+        android:text="Copy Bitmap 2" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:onClick="combineBitmap"
+        android:layout_centerHorizontal="true"
+        android:text="Combine"
+        />
+
+
+
+
+
+</RelativeLayout>
