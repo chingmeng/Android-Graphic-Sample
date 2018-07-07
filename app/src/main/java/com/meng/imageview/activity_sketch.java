@@ -53,6 +53,7 @@ public class activity_sketch extends AppCompatActivity {
     public void copyCanvas2 (View v) {
         try {
             bmap2 = Bitmap.createBitmap(customCanvas.getWidth(), customCanvas.getHeight(), Bitmap.Config.RGB_565);
+//            bmap2 = BitmapFactory.decodeResource(getResources(),R.drawable.cat);
             Canvas canvas2 = new Canvas(bmap2);
             customCanvas.draw(canvas2);
             img2.setImageBitmap(bmap2);
@@ -63,17 +64,30 @@ public class activity_sketch extends AppCompatActivity {
 
     public void combineBitmap(View v) {
 
-        /*try {
-            Bitmap cs = Bitmap.createBitmap(200, 200, Bitmap.Config.ARGB_8888);
+        try {
+            int img3Width = img3.getWidth();
+            int img3Height = img3.getHeight();
+            Bitmap cs = Bitmap.createBitmap(img3Width, img3Height, Bitmap.Config.ARGB_8888);
             Canvas canvasCombo = new Canvas(cs);
-            Bitmap a = ((BitmapDrawable) img.getDrawable()).getBitmap();
-            Bitmap b = ((BitmapDrawable) img2.getDrawable()).getBitmap();
-//            Bitmap a = BitmapFactory.decodeResource(getResources(),R.drawable.img1);
-//            Bitmap b = BitmapFactory.decodeResource(getResources(),R.drawable.img2);
+//            Bitmap a = ((BitmapDrawable) img.getDrawable()).getBitmap();
+//            Bitmap b = ((BitmapDrawable) img2.getDrawable()).getBitmap();
+//            Bitmap a = bmap;
+//            Bitmap b = bmap2;
+            Bitmap a = BitmapFactory.decodeResource(getResources(),R.drawable.img1);
+            Bitmap b = BitmapFactory.decodeResource(getResources(),R.drawable.img2);
+
+            int aWidth = a.getWidth();
+            int aHeight = a.getHeight();
+            int bWidth = b.getWidth();
+            int bHeight = b.getHeight();
+
+
+
 //            canvasCombo.drawBitmap(a, 0f, 0f, null);
 //            canvasCombo.drawBitmap(b, 10, 10, null);
-            canvasCombo.drawBitmap(a, 0f, 0f, null);
-            canvasCombo.drawBitmap(b, 10, 10, null);
+            canvasCombo.drawBitmap(a, img3Width/2-aWidth/2, img3Height/2-aHeight/2, null);
+            canvasCombo.drawBitmap(b, img3Width/2-bWidth/2, img3Height/2-bHeight/2, null);
+            canvasCombo.drawPath(customCanvas.mPath, customCanvas.mPaint);
             img3.draw(canvasCombo);
             img3.setImageBitmap(cs);
 
@@ -81,7 +95,6 @@ public class activity_sketch extends AppCompatActivity {
             e.printStackTrace();
         }
 
-*/
     }
 
 

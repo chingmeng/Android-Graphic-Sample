@@ -17,9 +17,38 @@
         <item name="navi12">Canvas Shader Scaling Animation</item>
         <item name="navi13">Drawable to Bitmap</item>
         <item name="navi14">Load Image</item>
-        <item name="navi14">Combine Image</item>
+        <item name="navi15">Combine Image</item>
+        <item name="navi16">Clip Region</item>
+        <item name="navi17">Testing Google Highlight View</item>
+        <item name="navi18">DrawPoints</item>
+        <item name="navi19">TouchPaint</item>
+        <item name="navi20">Arcs</item>
+        <item name="navi21">BitmapMesh</item>
+        <item name="navi22">ColorMatrixSample</item>
+        <item name="navi23">Unicode Chart</item>
+        <item name="navi24">Window Surface</item>
+        <item name="navi25">Sweep</item>
+        <item name="navi26">AlphaBitmap</item>
+        <item name="navi27">Animate Drawables</item>
+        <item name="navi28">BitmapPixels</item>
+        <item name="navi29">BitmapDecode</item>
+        <item name="navi30">CameraPreview</item>
+        <item name="navi31">ColorFilters</item>
+        <item name="navi32">Regions</item>
+        <item name="navi33">Xfermodes</item>
+        <item name="navi34">ScaleToFit</item>
+        <item name="navi35">SurfaceViewOverlay</item>
+        <item name="navi36">Compass</item>
+        <item name="navi37">TriangleActivity</item>
+        <item name="navi38">PieChart</item>
 
     </string-array>
+    <string name="camera_alert">Device has only one camera!</string>
+    <string name="switch_cam">Switch Camera</string>
 
+    <string name="visibility_1_vis">Vis</string>
+    <string name="visibility_1_invis">Invis</string>
+    <string name="visibility_1_gone">Gone</string>
+    <string name="hide_me">Hide Me!</string>
 
 </resources>

@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.meng.imageview">
 
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
@@ -23,19 +22,49 @@
         <activity android:name=".CanvasDrawing" />
         <activity android:name=".CanvasDrawingRotate" />
         <activity android:name=".CanvasDrawingRotateScale" />
+
         <activity android:name=".CanvasDrawingShader" />
         <activity android:name=".CanvasDrawingShaderScale" />
         <activity android:name=".DrawActivity" />
+
         <activity android:name=".LargeImageActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".activity_sketch" />
-        <activity android:name=".activity_cropimage" />
+
         <activity android:name=".activity_customdrawableview" />
         <activity android:name=".activity_drawable" />
         <activity android:name=".ImageToBitmap" />
-        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />
-        <activity android:name=".LoadImage.activity_loadimage"/>
-        <activity android:name=".combineImage"/>
+
+        <activity android:name=".LoadImage.activity_loadimage" />
+        <activity android:name=".combineImage" />
+        <activity android:name=".google.CropImage"/>
+
+        <activity android:name=".clipRegionSample"/>
+        <activity android:name=".mHighlightView"/>
+        <activity android:name=".apidemos.DrawPoints"/>
+
+        <activity android:name=".apidemos.TouchPaint"/>
+        <activity android:name=".apidemos.Arcs"/>
+        <activity android:name=".apidemos.BitmapMesh"/>
+
+        <activity android:name=".apidemos.ColorMatrixSample"/>
+
+        <activity android:name=".apidemos.UnicodeChart"/>
+        <activity android:name=".apidemos.WindowSurface"/>
+        <activity android:name=".apidemos.Sweep"/>
+        <activity android:name=".apidemos.AlphaBitmap"/>
+        <activity android:name=".apidemos.AnimateDrawables"/>
+        <activity android:name=".apidemos.BitmapPixels"/>
+        <activity android:name=".apidemos.BitmapDecode"/>
+        <activity android:name=".apidemos.CameraPreview"/>
+        <activity android:name=".apidemos.ColorFilters"/>
+        <activity android:name=".apidemos.Regions"/>
+        <activity android:name=".apidemos.Xfermodes"/>
+        <activity android:name=".apidemos.ScaleToFit"/>
+        <activity android:name=".apidemos.SurfaceViewOverlay"/>
+        <activity android:name=".apidemos.Compass"/>
+        <activity android:name=".apidemos.TriangleActivity"/>
+        <activity android:name=".activity_PieChart"/>
     </application>
 
 </manifest>

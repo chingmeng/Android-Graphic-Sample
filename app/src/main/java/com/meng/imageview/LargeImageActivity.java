@@ -23,11 +23,9 @@ public class LargeImageActivity extends Activity {
 
         Button b2 = (Button) findViewById(R.id.b2);
         final EditText et = (EditText) findViewById(R.id.et1);
-
-
-
         ImageView imageView = (ImageView) findViewById (R.id.iv2);
         Display display = getWindowManager().getDefaultDisplay();
+
         int displayWidth = display.getWidth();
 
         // Used to determine size only without creating the bitmap, as the bitmap is expensive
@@ -40,13 +38,15 @@ public class LargeImageActivity extends Activity {
         if (width > displayWidth) {
             int widthRatio = Math.round((float) width/ (float) displayWidth);
             // To reduce dimensions of Bitmap, lower quality, the higher, the lower the quality
-            options.inSampleSize = 10000;
+            options.inSampleSize = widthRatio;
         }
 
         // Decode by creating bitmap, after updating the options in code above
         options.inJustDecodeBounds = false;
         Bitmap scaledBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.largeimage, options);
         imageView.setImageBitmap(scaledBitmap);
+
+
 
         final BitmapFactory.Options op =  options;
         final ImageView iv =  imageView;

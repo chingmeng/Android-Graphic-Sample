@@ -30,10 +30,10 @@
 
     <ImageView
         android:id="@+id/mergedimage"
-        android:layout_below="@id/save_view"
         android:layout_width="match_parent"
-        android:layout_height="176dp"
-        android:layout_gravity="center_vertical" />
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@+id/button2" />
 
 
     <Button
@@ -52,7 +52,7 @@
         android:onClick="copyCanvas"
         android:layout_alignParentLeft="true"
         android:text="Copy Bitmap"
-        />
+        android:id="@+id/button2" />
 
     <Button
         android:id="@+id/button"

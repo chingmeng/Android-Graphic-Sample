@@ -1,3 +1,4 @@
+/*
 package com.meng.imageview;
 
 import android.Manifest;
@@ -21,9 +22,11 @@ import com.theartofdev.edmodo.cropper.CropImageView;
 
         ImageButton imageButton;
 
-        /**
+        */
+/**
          * Persist URI image to crop URI if specific permissions are required
-         */
+         *//*
+
         private Uri mCropImageUri;
 
         @Override
@@ -41,9 +44,11 @@ import com.theartofdev.edmodo.cropper.CropImageView;
 
         }
 
-        /**
+        */
+/**
          * Start pick image activity with chooser.
-         */
+         *//*
+
         public void onSelectImageClick(View view) {
             CropImage.startPickImageActivity(this);
         }
@@ -89,13 +94,15 @@ import com.theartofdev.edmodo.cropper.CropImageView;
             }
         }
 
-        /**
+        */
+/**
          * Start crop image activity for the given image.
-         */
+         *//*
+
         private void startCropImageActivity(Uri imageUri) {
             CropImage.activity(imageUri)
                     .setGuidelines(CropImageView.Guidelines.ON)
                     .setMultiTouchEnabled(true)
                     .start(this);
         }
-    }
+    }*/
